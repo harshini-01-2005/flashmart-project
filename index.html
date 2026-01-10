@@ -2,41 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FlashMart | E-commerce</title>
+    <title>FlashMart | Smart Shopping</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<header class="navbar">
     <h1>FlashMart</h1>
-    <p>Simple E-commerce Website</p>
+    <p>Smart & Simple E-commerce App</p>
 </header>
 
-<main>
+<main class="container">
+
     <section class="products">
-        <div class="product">
-            <h3>Smart Watch</h3>
-            <p>Price: ₹1500</p>
-            <button onclick="addToCart(1500)">Add to Cart</button>
-        </div>
+        <h2>Products</h2>
 
-        <div class="product">
-            <h3>Headphones</h3>
-            <p>Price: ₹2000</p>
-            <button onclick="addToCart(2000)">Add to Cart</button>
-        </div>
+        <div class="product-grid">
 
-        <div class="product">
-            <h3>Bluetooth Speaker</h3>
-            <p>Price: ₹2500</p>
-            <button onclick="addToCart(2500)">Add to Cart</button>
+            <div class="product-card">
+                <h3>Smart Watch</h3>
+                <p class="price">₹1500</p>
+                <button onclick="addToCart('Smart Watch',1500)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Headphones</h3>
+                <p class="price">₹2000</p>
+                <button onclick="addToCart('Headphones',2000)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Bluetooth Speaker</h3>
+                <p class="price">₹2500</p>
+                <button onclick="addToCart('Bluetooth Speaker',2500)">Add to Cart</button>
+            </div>
+
         </div>
     </section>
 
     <section class="cart">
         <h2>Shopping Cart</h2>
-        <p>Total Amount: ₹<span id="total">0</span></p>
+        <ul id="cart-items"></ul>
+        <h3>Total: ₹<span id="total">0</span></h3>
     </section>
+
 </main>
 
 <footer>
@@ -46,4 +55,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
