@@ -1,3 +1,4 @@
+alert("JS LOADED");
 
 let totalAmount = 0;
 
