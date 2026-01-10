@@ -1,8 +1,23 @@
-alert("JS LOADED");
-
 let totalAmount = 0;
+const cartItems = document.getElementById("cart-items");
+const total = document.getElementById("total");
 
-function addToCart(price) {
+function addToCart(product, price) {
     totalAmount += price;
-    document.getElementById("total").innerText = totalAmount;
+    total.innerText = totalAmount;
+
+    const li = document.createElement("li");
+    li.innerHTML = `
+        ${product} - ₹${price}
+        <button class="remove-btn" onclick="removeItem(this, ${price})">X</button>
+    `;
+
+    cartItems.appendChild(li);
 }
+
+function removeItem(button, price) {
+    button.parentElement.remove();
+    totalAmount -= price;
+    total.innerText = totalAmount;
+}
+
