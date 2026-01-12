@@ -18,7 +18,7 @@ This project was independently designed and implemented as part of my web develo
 Personal Academic Project
 
 ## Live Demo
-(Enable GitHub Pages to view live project)
+enabled git hub pages to view my website with link :" "
 
 ## Author
 Cheedipalli Hema Harshini  
