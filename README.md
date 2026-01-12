@@ -18,7 +18,7 @@ This project was independently designed and implemented as part of my web develo
 Personal Academic Project
 
 ## Live Demo
-enabled git hub pages to view my website with link :" "
+enabled git hub pages to view my website with link :" https://harshini-01-2005.github.io/flashmart-project/ "
 
 ## Author
 Cheedipalli Hema Harshini  
